@@ -60,6 +60,10 @@ app.use("/api/v1/user", userRouter);
 app.use("/api/v1/job", jobRouter);
 app.use("/api/v1/application", applicationRouter);
 
+
+app.get("/", (req, res) => {
+  res.send("API is running ✅");
+});
 // Global error handler
 app.use(errorMiddleware);
 
