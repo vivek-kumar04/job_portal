@@ -41,6 +41,9 @@ const Login = () => {
     return <Navigate to={'/'}/>
   }
 
+  console.log("API URL", process.env.REACT_APP_API_URL);
+
+
   return (
     <>
       <section className="authPage">
