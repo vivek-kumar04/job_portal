@@ -62,7 +62,9 @@ app.use("/api/v1/application", applicationRouter);
 
 // Database connection
 dbConnection();
-
+app.get("/", (req, res) => {
+  res.send("API is working ✅");
+});
 // Error handler
 app.use(errorMiddleware);
 
