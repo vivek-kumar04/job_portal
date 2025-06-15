@@ -12,7 +12,7 @@ const JobDetails = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}/api/v1/job/${id}`, {
+      .get(`https://job-portal-itt5.vercel.app/api/v1/job/${id}`, {
         withCredentials: true,
       })
       .then((res) => {
