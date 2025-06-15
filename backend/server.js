@@ -40,9 +40,8 @@ cloudinary.v2.config({
 // Middleware
 app.use(
   cors({
-    origin: [process.env.FRONTEND_URL],
-    method: ["GET", "POST", "DELETE", "PUT"],
-    credentials: true,
+    origin: ["https://job-portal-ashy-nine.vercel.app"], // <-- frontend URL
+    credentials: true, // needed for cookies
   })
 );
 app.use(cookieParser());
